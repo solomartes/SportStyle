@@ -1,60 +1,415 @@
 <DOCTYPE html="pt-br">
-    <html>
-  
-    <head>
-      <meta charset="UTF-8">
-      <title>Camisas</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="stylesheet" href="styler.css">
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Camisas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styler.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg " id="navbar-color">
+        <div class="container-fluid">
+          <a href="principal.html">
+            <img src="img/SportStyle.png" alt="Logo" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " id="nav-texto" aria-current="page" href="principal.html"><i
+                    class="bi bi-house-fill"></i> Principal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " id="nav-texto" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-box-seam-fill"></i> Produtos
+                </a>
+                <ul class="dropdown-menu" id="navbar-color">
+                  <li><a class="dropdown-item" id="nav-texto" href="br.html">Camisas de Time Brasileiras</a></li>
+                  <li><a class="dropdown-item" id="nav-texto" href="produtos.html">Camisas de Time Europeu</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item bi-color">
+                <a class="nav-link active" id="nav-texto" aria-current="page" href="login.html"><i
+                    class="bi bi-person-circle"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     </head>
-  
+
     <body>
-      <header>
-        <nav class="navbar navbar-expand-lg " id="navbar-color">
-            <div class="container-fluid">
-              <a href="principal.html">
-                  <img src="img/SportStyle.png" alt="Logo" width="100" height="100">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <main>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="img/santasticomelhortimedobrasil.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Santos</h5>
+              <p class="card-text"><small class="text">R$ 199,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link " id="nav-texto" aria-current="page" href="principal.html">Principal</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " id="nav-texto" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Produtos
-                    </a>
-                    <ul class="dropdown-menu" id="navbar-color">
-                      <li><a class="dropdown-item" id="nav-texto" href="br.html">Camisas de Time Brasileiras</a></li>
-                      <li><a class="dropdown-item"  id="nav-texto"href="produtos.html">Camisas de Time Europeu</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ms-auto" >
-                  <li class="nav-item">
-                    <a class="nav-link active"  id="nav-texto" aria-current="page" href="login.html">Conta</a>
-                  </li>
-                </ul>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#hsimples">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/botafogo.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Botafogo</h5>
+              <p class="card-text"><small class="text">R$ 180,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#hcheddar">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/flamengo.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Flamengo</h5>
+              <p class="card-text"><small class="text">R$ 220,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xtudo">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/fluminense.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Fluminense</h5>
+              <p class="card-text"><small class="text">R$ 180,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#dsimples">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/fortaleza.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Fortaleza</h5>
+              <p class="card-text"><small class="text">R$ 190,00</small></p>
+              <button type="button" class="btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#dcomp">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="img/marias.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Cruzeiro</h5>
+              <p class="card-text"><small class="text">R$ 200,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xegg">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/palmeiras.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Palmeiras</h5>
+              <p class="card-text"><small class="text">R$ 210,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xsalada">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/atletico mineiro.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Atlético Mineiro</h5>
+              <p class="card-text"><small class="text">R$ 205,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xbacon">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/sao paulo.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">São Paulo</h5>
+              <p class="card-text"><small class="text">R$ 195,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xburguer">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/vasco.webp" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Vasco</h5>
+              <p class="card-text"><small class="text">R$ 185,00</small></p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compra">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#xfrango">
+                Saiba mais
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="hsimples" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Santos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Santos
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
               </div>
             </div>
-          </nav>
-      </header>
-      <main>
-        </head>
-  
-        <body>
+          </div>
+        </div>
+
+        <div class="modal fade" id="hcheddar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Botafogo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Botafogo
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xtudo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Flamengo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Flamengo
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xegg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cruzeiro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Cruzeiro
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="dsimples" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fluminense</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Fluminense
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="dcomp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fortaleza</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Fortaleza
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xsalada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Palmeiras</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Palmeiras
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xbacon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Atlético Mineiro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Atlético Mineiro
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xburguer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">São Paulo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do São Paulo
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="xfrango" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vasco</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Camisa de futebol do Vasco
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sucesso!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Produto adicionado ao carrinho.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>
         <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
@@ -69,5 +424,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     </body>
-  
-    </html>
+
+  </html>
